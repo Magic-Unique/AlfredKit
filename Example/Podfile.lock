@@ -1,0 +1,16 @@
+PODS:
+  - AlfredKit (0.1.0)
+
+DEPENDENCIES:
+  - AlfredKit (from `../`)
+
+EXTERNAL SOURCES:
+  AlfredKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AlfredKit: 795bf4f6071aecf777d97cec2aead42911b81712
+
+PODFILE CHECKSUM: 5d5eb77bf31a45135185a4abb44ae86ff1fac6cb
+
+COCOAPODS: 1.5.3

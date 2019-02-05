@@ -1,0 +1,6 @@
+framework module AlfredKit {
+  umbrella header "AlfredKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

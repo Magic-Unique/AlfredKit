@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6003F589195388D20070C39A"
-               BuildableName = "AlfredKit_Example.app"
-               BlueprintName = "AlfredKit_Example"
+               BlueprintIdentifier = "7E86CDE02209877900392901"
+               BuildableName = "Example"
+               BlueprintName = "Example"
                ReferencedContainer = "container:AlfredKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,23 +28,13 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6003F5AD195388D20070C39A"
-               BuildableName = "AlfredKit_Tests.xctest"
-               BlueprintName = "AlfredKit_Tests"
-               ReferencedContainer = "container:AlfredKit.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "AlfredKit_Example.app"
-            BlueprintName = "AlfredKit_Example"
+            BlueprintIdentifier = "7E86CDE02209877900392901"
+            BuildableName = "Example"
+            BlueprintName = "Example"
             ReferencedContainer = "container:AlfredKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "AlfredKit_Example.app"
-            BlueprintName = "AlfredKit_Example"
+            BlueprintIdentifier = "7E86CDE02209877900392901"
+            BuildableName = "Example"
+            BlueprintName = "Example"
             ReferencedContainer = "container:AlfredKit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -84,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "AlfredKit_Example.app"
-            BlueprintName = "AlfredKit_Example"
+            BlueprintIdentifier = "7E86CDE02209877900392901"
+            BuildableName = "Example"
+            BlueprintName = "Example"
             ReferencedContainer = "container:AlfredKit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
