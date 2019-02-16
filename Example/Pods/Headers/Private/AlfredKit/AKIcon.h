@@ -1,0 +1,1 @@
+../../../../../AlfredKit/Classes/AKIcon.h

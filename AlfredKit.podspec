@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "AlfredKit"
-  s.version      = "0.1.0"
+  s.version      = "1.0.0"
   s.summary      = "AlfredKit is a simple framework for Alfred's workflow api."
 
   # This description is used to generate tags and improve search results.

@@ -12,10 +12,47 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         AKList *list = [[AKList alloc] init];
-        [list addItem:[AKItem itemWithCreator:^(AKItem *item) {
+        list.useXMLMode = NO;
+        [list addItemWithCreator:^(AKItem *item) {
             item.title = @"title";
             item.subtitle = @"subtitle";
-        }]];
+            item.autocomplete = @"aktool";
+            item.arg = @"arg";
+            [item.icon setFileTypeWithPathExtension:@"app"];
+            [item setSubtitle:@"subtitle AKModKeyCommand" mod:AKModKeyCommand];
+            [item setSubtitle:@"subtitle AKModKeyOption" mod:AKModKeyOption];
+            [item setSubtitle:@"subtitle AKModKeyControl" mod:AKModKeyControl];
+            [item setSubtitle:@"subtitle AKModKeyShift" mod:AKModKeyShift];
+            [item setSubtitle:@"subtitle AKModKeyFn" mod:AKModKeyFn];
+            [item setMod:AKModKeyCommand subtitle:@"mod AKModKeyCommand" arg:@"AKModKeyCommand"];
+            [item setMod:AKModKeyOption subtitle:@"mod AKModKeyOption" arg:@"AKModKeyOption"];
+            [item setMod:AKModKeyControl subtitle:@"mod AKModKeyControl" arg:nil];
+            [item setMod:AKModKeyShift subtitle:@"mod AKModKeyShift" arg:@"AKModKeyShift"];
+            [item setMod:AKModKeyFn subtitle:@"mod AKModKeyFn" arg:@"AKModKeyFn"];
+            [item setCopyText:@"onCopyText"];
+            [item setLargeText:@"onLargeText"];
+            item.quicklookurl = @"https://www.baidu.com";
+        }];
+        [list addItemWithCreator:^(AKItem *item) {
+            item.title = @"Desktop";
+            item.subtitle = @"~/Desktop";
+            item.arg = @"Desktop";
+            item.type = AKItemTypeFile;
+            [item.icon setFileIconWithPath:@"~/Desktop"];
+            [item setSubtitle:@"subtitle AKModKeyCommand" mod:AKModKeyCommand];
+            [item setSubtitle:@"subtitle AKModKeyOption" mod:AKModKeyOption];
+            [item setSubtitle:@"subtitle AKModKeyControl" mod:AKModKeyControl];
+            [item setSubtitle:@"subtitle AKModKeyShift" mod:AKModKeyShift];
+            [item setSubtitle:@"subtitle AKModKeyFn" mod:AKModKeyFn];
+            [item setMod:AKModKeyCommand subtitle:@"mod AKModKeyCommand" arg:@"AKModKeyCommand"];
+            [item setMod:AKModKeyOption subtitle:@"mod AKModKeyOption" arg:@"AKModKeyOption"];
+            [item setMod:AKModKeyControl subtitle:@"mod AKModKeyControl" arg:nil];
+            [item setMod:AKModKeyShift subtitle:@"mod AKModKeyShift" arg:@"AKModKeyShift"];
+            [item setMod:AKModKeyFn subtitle:@"mod AKModKeyFn" arg:@"AKModKeyFn"];
+            [item setCopyText:@"onCopyText"];
+            [item setLargeText:@"onLargeText"];
+            item.quicklookurl = @"~/Desktop";
+        }];
         [list show];
     }
     return 0;
