@@ -9,7 +9,40 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+```objc
+AKList *list = [[AKList alloc] init];
+list.useXMLMode = NO;
+/*
+ * Use XML mode, default is NO. 
+ * XML mode is deprecated by Alfred.
+ * If `useXMLMode` is NO, it will use JSON mode. 
+ */
+
+//	Add an item to list
+[list addItemWithCreator:^(AKItem *item) {
+    item.title = @"title";
+    item.subtitle = @"subtitle";
+    item.autocomplete = @"aktool";
+    item.arg = @"arg";
+    [item.icon setFileTypeWithPathExtension:@"app"];
+    [item setSubtitle:@"subtitle AKModKeyCommand" mod:AKModKeyCommand];
+    [item setSubtitle:@"subtitle AKModKeyOption" mod:AKModKeyOption];
+    [item setSubtitle:@"subtitle AKModKeyControl" mod:AKModKeyControl];
+    [item setSubtitle:@"subtitle AKModKeyShift" mod:AKModKeyShift];
+    [item setSubtitle:@"subtitle AKModKeyFn" mod:AKModKeyFn];
+    [item setMod:AKModKeyCommand subtitle:@"mod AKModKeyCommand" arg:@"AKModKeyCommand"];
+    [item setMod:AKModKeyOption subtitle:@"mod AKModKeyOption" arg:@"AKModKeyOption"];
+    [item setMod:AKModKeyControl subtitle:@"mod AKModKeyControl" arg:nil];
+    [item setMod:AKModKeyShift subtitle:@"mod AKModKeyShift" arg:@"AKModKeyShift"];
+    [item setMod:AKModKeyFn subtitle:@"mod AKModKeyFn" arg:@"AKModKeyFn"];
+    [item setCopyText:@"onCopyText"];
+    [item setLargeText:@"onLargeText"];
+    item.quicklookurl = @"https://www.baidu.com";
+}];
+
+//	Format string and output to Alfred console.
+[list show];
+```
 
 ## Installation
 
