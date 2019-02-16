@@ -33,10 +33,14 @@
 - (id)JSON {
     NSString *type = [AKIcon typeName:self.type];
     NSString *path = self.content;
-    if (type && path) {
-        return NSDictionaryOfVariableBindings(type, path);
+    if (path) {
+        NSMutableDictionary *JSON = [NSMutableDictionary dictionary];
+        JSON[@"type"] = type;
+        JSON[@"path"] = path;
+        return JSON;
+    } else {
+        return nil;
     }
-    return path;
 }
 
 - (NSXMLElement *)XMLElement {
