@@ -1,0 +1,1 @@
+../../../../../AlfredKit/Classes/AKScriptFilter.h

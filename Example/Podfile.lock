@@ -1,5 +1,5 @@
 PODS:
-  - AlfredKit (1.0.0)
+  - AlfredKit (1.0.1)
 
 DEPENDENCIES:
   - AlfredKit (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AlfredKit: 208cd7bbce341b436166b7b52c78c7d585ecf3d1
+  AlfredKit: 268a1f4ad2df7ad133712dbe0a8bf2ae53af80ac
 
 PODFILE CHECKSUM: 5d5eb77bf31a45135185a4abb44ae86ff1fac6cb
 

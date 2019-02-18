@@ -2,7 +2,7 @@
 //  AKUtils.m
 //  AlfredKit
 //
-//  Created by 吴双 on 2019/2/16.
+//  Created by Magic-Unique on 2019/2/16.
 //
 
 #import "AKUtils.h"

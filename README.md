@@ -10,8 +10,8 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ```objc
-AKList *list = [[AKList alloc] init];
-list.useXMLMode = NO;
+AKScriptFilter *scriptFilter = [[AKScriptFilter alloc] init];
+scriptFilter.useXMLMode = NO;
 /*
  * Use XML mode, default is NO. 
  * XML mode is deprecated by Alfred.
@@ -19,29 +19,55 @@ list.useXMLMode = NO;
  */
 
 //	Add an item to list
-[list addItemWithCreator:^(AKItem *item) {
-    item.title = @"title";
-    item.subtitle = @"subtitle";
-    item.autocomplete = @"aktool";
-    item.arg = @"arg";
-    [item.icon setFileTypeWithPathExtension:@"app"];
-    [item setSubtitle:@"subtitle AKModKeyCommand" mod:AKModKeyCommand];
-    [item setSubtitle:@"subtitle AKModKeyOption" mod:AKModKeyOption];
-    [item setSubtitle:@"subtitle AKModKeyControl" mod:AKModKeyControl];
-    [item setSubtitle:@"subtitle AKModKeyShift" mod:AKModKeyShift];
-    [item setSubtitle:@"subtitle AKModKeyFn" mod:AKModKeyFn];
-    [item setMod:AKModKeyCommand subtitle:@"mod AKModKeyCommand" arg:@"AKModKeyCommand"];
-    [item setMod:AKModKeyOption subtitle:@"mod AKModKeyOption" arg:@"AKModKeyOption"];
-    [item setMod:AKModKeyControl subtitle:@"mod AKModKeyControl" arg:nil];
-    [item setMod:AKModKeyShift subtitle:@"mod AKModKeyShift" arg:@"AKModKeyShift"];
-    [item setMod:AKModKeyFn subtitle:@"mod AKModKeyFn" arg:@"AKModKeyFn"];
-    [item setCopyText:@"onCopyText"];
-    [item setLargeText:@"onLargeText"];
-    item.quicklookurl = @"https://www.baidu.com";
+[scriptFilter addItemWithCreator:^(AKItem *item) {
+	// title
+	item.title = @"title";
+	item.subtitle = @"subtitle";
+	
+	//	auto complete with TAB key
+	item.autocomplete = @"aktool";
+	
+	//	arg for next step
+	item.arg = @"arg";
+	
+	//	icon, [FileType|FileIcon|Image]
+	[item.icon setFileTypeWithPathExtension:@"app"];
+	
+	//	subtitle (only for XML mode)
+	//	When user hold on the mod key, Alfred will display the first arg as subtitle
+	[item setSubtitle:@"subtitle AKModKeyCommand" mod:AKModKeyCommand];
+	[item setSubtitle:@"subtitle AKModKeyOption" mod:AKModKeyOption];
+	[item setSubtitle:@"subtitle AKModKeyControl" mod:AKModKeyControl];
+	[item setSubtitle:@"subtitle AKModKeyShift" mod:AKModKeyShift];
+	[item setSubtitle:@"subtitle AKModKeyFn" mod:AKModKeyFn];
+	
+	//	Mod key (recommand, for XML and JSON)
+	//	When user hold on the mod key, Alfred will display the subtitle.
+	//	If user hold on the mod key and press RETURN, the arg will pass to next step.
+	[item setMod:AKModKeyCommand subtitle:@"mod AKModKeyCommand" arg:@"AKModKeyCommand"];
+	[item setMod:AKModKeyOption subtitle:@"mod AKModKeyOption" arg:@"AKModKeyOption"];
+	[item setMod:AKModKeyControl subtitle:@"mod AKModKeyControl" arg:nil];
+	[item setMod:AKModKeyShift subtitle:@"mod AKModKeyShift" arg:@"AKModKeyShift"];
+	[item setMod:AKModKeyFn subtitle:@"mod AKModKeyFn" arg:@"AKModKeyFn"];
+	
+	//	When user press cmd+C, the text will be copied.
+	[item setCopyText:@"onCopyText"];
+	
+	//	When user press cmd+L, the text will display on LargeType window.
+	[item setLargeText:@"onLargeText"];
+	
+	//	When user press cmd+Y or Shift, the url or path will open in QuickLook window.
+	item.quicklookurl = @"https://www.alfredapp.com";
 }];
 
+//  Add variables to list, on next step, you can use {var:name} query to get them.
+scriptFilter.varables[@"name"] = @"value";
+
+//	Set rerun time interval.
+scriptFilter.rerun = 1;
+
 //	Format string and output to Alfred console.
-[list show];
+[scriptFilter show];
 ```
 
 ## Installation

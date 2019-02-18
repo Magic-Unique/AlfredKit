@@ -11,7 +11,7 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        AKList *list = [[AKList alloc] init];
+        AKScriptFilter *list = [[AKScriptFilter alloc] init];
         list.useXMLMode = NO;
         [list addItemWithCreator:^(AKItem *item) {
             item.title = @"title";
@@ -35,7 +35,7 @@ int main(int argc, const char * argv[]) {
         }];
         [list addItemWithCreator:^(AKItem *item) {
             item.title = @"Desktop";
-            item.subtitle = @"~/Desktop";
+            item.subtitle = NSDate.date.description; // test for `rerun`
             item.arg = @"Desktop";
             item.type = AKItemTypeFile;
             [item.icon setFileIconWithPath:@"~/Desktop"];
@@ -53,6 +53,8 @@ int main(int argc, const char * argv[]) {
             [item setLargeText:@"onLargeText"];
             item.quicklookurl = @"~/Desktop";
         }];
+        list.variables[@"a"] = @"b";
+        list.rerun = 1;
         [list show];
     }
     return 0;

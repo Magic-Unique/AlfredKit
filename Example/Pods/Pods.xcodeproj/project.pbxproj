@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DE0DC38E0A0F8DA18692AE754C49756 /* AKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A0230D1AA79DBD354C925B1B0A39B00 /* AKUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		311D4B940E200356F066880DC26966A6 /* AKText.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CD779C71F3C7309143BEE06A3EC15B1 /* AKText.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		45C7E19A1FF463DB8936D50BB706D036 /* AKText.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0C702DC42A6DB27FE476BDAAAFBD07 /* AKText.m */; };
-		473D4867CFBCDE13680DC6D80FB066D7 /* AKModifier.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF5E517F1B4E064509CB12C8B97A7DE /* AKModifier.m */; };
-		49893B69A238553E6E298E5B5C49E1EE /* AKSubtitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF20443DBF1400D9DD5A9D79C5FB1F5 /* AKSubtitle.m */; };
-		54D1A80E33511532D950EDB029C997BE /* AKList.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC711DE68CF2C8EE6848E637879445 /* AKList.m */; };
-		5EAA0CADDB7BDED20111E91F9D8FF47F /* AKModifier.h in Headers */ = {isa = PBXBuildFile; fileRef = CD050F568213B31AA624F5C0E98B0302 /* AKModifier.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		638C31A200CFF4A54322F4AB569604E4 /* AKIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = E009EFF4FF3F031F6EB1A60CE4BEE97A /* AKIcon.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7563CCB5C4D1A3BF9A9AF61DF83A0117 /* AKIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4EB4480D9B9388AB2152339CAC3F7D /* AKIcon.m */; };
-		7A30423D6C65635091CB22665EACA13F /* AKItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 878E71154601C6A6603501460B2F7978 /* AKItem.m */; };
-		7BB620EEEFA4E5B561180DB451817F9C /* AlfredKit.h in Headers */ = {isa = PBXBuildFile; fileRef = FD00F4D9C35046DB2229E03BDC0AB1D2 /* AlfredKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		95803BBD7ACF260E0F7C5FEEEF136F12 /* AlfredKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C891D92C7152B76EC26E1A06F6E1DF41 /* AlfredKit-dummy.m */; };
-		96EAE76A66CD17EDE7CB5E0940A319EA /* AKSubtitle.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C4B453273C6C897834FCEAE849A534 /* AKSubtitle.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9A1D600BE5C5865A273320AAD7785F0A /* AKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 608DFFFAD91F9AC381C92A1BF9A8CE58 /* AKUtils.m */; };
-		BD66D578D52F99D6C88638CE15BB874B /* AKItem.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AEFF7A7FBE6B6BAABC566AFF75172 /* AKItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CE62753EBAFAEFD1E19CC67E13547FAB /* AKContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0454D1667DD14A54AD47E6AA659B1C86 /* AKContent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0D40778E889E2E282C9C084AEF54F3E1 /* AKSubtitle.h in Headers */ = {isa = PBXBuildFile; fileRef = F5AD77CA3DD8F987BE092357C22FB2C1 /* AKSubtitle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2082048AFF7F00BA4B4056CD7B97174C /* AKItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 71E664B12747B2AE0B5CCDF8E01A1BC5 /* AKItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FF4963FD15172BC47E9E8FB44ADA827 /* AKText.h in Headers */ = {isa = PBXBuildFile; fileRef = 579BC045624EE41D6326AA2E57D0C721 /* AKText.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		395B0217BF1F4877E412443CA8C86A0E /* AKScriptFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = F3B5918C5A70F0B8D7AFB3A0AE5E4BFF /* AKScriptFilter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3D154E7F7E05E52D2DD1EB85E70C3916 /* AKText.m in Sources */ = {isa = PBXBuildFile; fileRef = 7103F231CE87FD4F32F49DDD778BCB7E /* AKText.m */; };
+		485822BD8F8A6AAD86D4C8711ACF3FFD /* AlfredKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D485B3F3C4FE6ED230CDC705E238ACB /* AlfredKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5DBB51A009A0FAEDA829BAAFCA2310E6 /* AKIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = DA56E79D487E7A89F4EB45B3755C356F /* AKIcon.m */; };
+		610783F2FA537B8B61F59F4CC32407CE /* AKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 515CD4030965DA2A5A2A6821B94DBF52 /* AKUtils.m */; };
+		6148710BEF8AD369016AA43FEC7636BD /* AKScriptFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC97269298773F0DBFA66DCEAFACBD6 /* AKScriptFilter.m */; };
+		7E60FA93C6A867E6DEC323F750ACF8A7 /* AKItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAC0D113A76AB92B56BE2ED19CF8ADD /* AKItem.m */; };
+		859D086FA3D5723996135F47D448B19D /* AlfredKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B0B207AB2DE902902C15E5766677FB /* AlfredKit-dummy.m */; };
+		A9BA9682B82B25D7CB4C7D7DC3F28800 /* AKModifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8C81C601FCD2BC2BD195D06D410D16 /* AKModifier.m */; };
+		B677AF106FFBC75184092FA75EB46D58 /* AKModifier.h in Headers */ = {isa = PBXBuildFile; fileRef = B920CF0733B418F9AE93573833579366 /* AKModifier.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B92C72CDAF9C98174B94F83F8AE87262 /* AKSubtitle.m in Sources */ = {isa = PBXBuildFile; fileRef = E28F7D2E21E8A7EB6B497928B170E819 /* AKSubtitle.m */; };
+		BFD3A46201AF47F28B7CA4DFEA3E29FC /* AKIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = 136478E608E6BAFC5C05F336DEAD2EC6 /* AKIcon.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CE2E8D8146C7FF9FED9578A00B69D49F /* AKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = AFA879E52637898F3D7EACF838DE6C8F /* AKUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E4A2BEC0A23BA7EEDA35C516E55DEC7E /* Pods-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEC40D5678F9239733240DEEFC46A68 /* Pods-Example-dummy.m */; };
-		E9F5E8558BD7B3DCAC1C426C5A125FD5 /* AKList.h in Headers */ = {isa = PBXBuildFile; fileRef = C826B09F153A36B4F8180E88DF9D2FE4 /* AKList.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F976F34CF1F011D26C8E7C8A73301438 /* AKContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F016CA229233E394B12CDA860DF2E66 /* AKContent.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,55 +32,55 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2A2BE52B9FF4754297395AC400ECE1EA;
+			remoteGlobalIDString = 9EF30B092D12C9C6E435F70DC438FE24;
 			remoteInfo = AlfredKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0454D1667DD14A54AD47E6AA659B1C86 /* AKContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKContent.h; path = AlfredKit/Classes/AKContent.h; sourceTree = "<group>"; };
-		04714AFEF75266F7FDAE71113A8FB020 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		0A0230D1AA79DBD354C925B1B0A39B00 /* AKUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKUtils.h; path = AlfredKit/Classes/AKUtils.h; sourceTree = "<group>"; };
-		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		31F8B7C8389C68732EA8219029F84F7D /* AlfredKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlfredKit-prefix.pch"; sourceTree = "<group>"; };
-		3B54EFA255DEC31F09223C9AB3E8D299 /* AlfredKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlfredKit.xcconfig; sourceTree = "<group>"; };
+		0B8C81C601FCD2BC2BD195D06D410D16 /* AKModifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AKModifier.m; path = AlfredKit/Classes/AKModifier.m; sourceTree = "<group>"; };
+		0D485B3F3C4FE6ED230CDC705E238ACB /* AlfredKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AlfredKit.h; path = AlfredKit/Classes/AlfredKit.h; sourceTree = "<group>"; };
+		136478E608E6BAFC5C05F336DEAD2EC6 /* AKIcon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKIcon.h; path = AlfredKit/Classes/AKIcon.h; sourceTree = "<group>"; };
+		13EF6B6ECDC6D2B5E4CB773293BD7774 /* AlfredKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlfredKit-prefix.pch"; sourceTree = "<group>"; };
+		1A5B0063A20CE4CFB1C99AC2660A2CB0 /* AlfredKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = AlfredKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2F016CA229233E394B12CDA860DF2E66 /* AKContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKContent.h; path = AlfredKit/Classes/AKContent.h; sourceTree = "<group>"; };
 		3CEC40D5678F9239733240DEEFC46A68 /* Pods-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Example-dummy.m"; sourceTree = "<group>"; };
-		4CD779C71F3C7309143BEE06A3EC15B1 /* AKText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKText.h; path = AlfredKit/Classes/AKText.h; sourceTree = "<group>"; };
-		608DFFFAD91F9AC381C92A1BF9A8CE58 /* AKUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AKUtils.m; path = AlfredKit/Classes/AKUtils.m; sourceTree = "<group>"; };
+		515CD4030965DA2A5A2A6821B94DBF52 /* AKUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AKUtils.m; path = AlfredKit/Classes/AKUtils.m; sourceTree = "<group>"; };
+		579BC045624EE41D6326AA2E57D0C721 /* AKText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKText.h; path = AlfredKit/Classes/AKText.h; sourceTree = "<group>"; };
+		628A9A070B6CBD19583137EA49AFAD63 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		648DF762ABAC6C51F886F5773B5F0EFC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6C5CE376980CDBAEE3E41C7AA04AF2AB /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
-		7ADC711DE68CF2C8EE6848E637879445 /* AKList.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AKList.m; path = AlfredKit/Classes/AKList.m; sourceTree = "<group>"; };
+		6DAC0D113A76AB92B56BE2ED19CF8ADD /* AKItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AKItem.m; path = AlfredKit/Classes/AKItem.m; sourceTree = "<group>"; };
+		7103F231CE87FD4F32F49DDD778BCB7E /* AKText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AKText.m; path = AlfredKit/Classes/AKText.m; sourceTree = "<group>"; };
+		71E664B12747B2AE0B5CCDF8E01A1BC5 /* AKItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKItem.h; path = AlfredKit/Classes/AKItem.h; sourceTree = "<group>"; };
 		7CA94ABFC6D91A8899C97E8CA21A4C98 /* Pods-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7E0C702DC42A6DB27FE476BDAAAFBD07 /* AKText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AKText.m; path = AlfredKit/Classes/AKText.m; sourceTree = "<group>"; };
-		7FF20443DBF1400D9DD5A9D79C5FB1F5 /* AKSubtitle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AKSubtitle.m; path = AlfredKit/Classes/AKSubtitle.m; sourceTree = "<group>"; };
-		878E71154601C6A6603501460B2F7978 /* AKItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AKItem.m; path = AlfredKit/Classes/AKItem.m; sourceTree = "<group>"; };
 		8B2B9C219D8456F69498157925D8B4F7 /* Pods-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		A1126BF0A0F6D599E6B2428EAC165D9F /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Example.a"; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8C4B453273C6C897834FCEAE849A534 /* AKSubtitle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKSubtitle.h; path = AlfredKit/Classes/AKSubtitle.h; sourceTree = "<group>"; };
-		B89AEFF7A7FBE6B6BAABC566AFF75172 /* AKItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKItem.h; path = AlfredKit/Classes/AKItem.h; sourceTree = "<group>"; };
+		8ECDF2F172BCB767B9C1B226D60808B9 /* AlfredKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlfredKit.xcconfig; sourceTree = "<group>"; };
+		A1126BF0A0F6D599E6B2428EAC165D9F /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFA879E52637898F3D7EACF838DE6C8F /* AKUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKUtils.h; path = AlfredKit/Classes/AKUtils.h; sourceTree = "<group>"; };
+		B920CF0733B418F9AE93573833579366 /* AKModifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKModifier.h; path = AlfredKit/Classes/AKModifier.h; sourceTree = "<group>"; };
 		BA2479111A5D861DFD54502E0D17764F /* Pods-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-frameworks.sh"; sourceTree = "<group>"; };
-		BBF5E517F1B4E064509CB12C8B97A7DE /* AKModifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AKModifier.m; path = AlfredKit/Classes/AKModifier.m; sourceTree = "<group>"; };
-		BC4EB4480D9B9388AB2152339CAC3F7D /* AKIcon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AKIcon.m; path = AlfredKit/Classes/AKIcon.m; sourceTree = "<group>"; };
-		C826B09F153A36B4F8180E88DF9D2FE4 /* AKList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKList.h; path = AlfredKit/Classes/AKList.h; sourceTree = "<group>"; };
-		C891D92C7152B76EC26E1A06F6E1DF41 /* AlfredKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlfredKit-dummy.m"; sourceTree = "<group>"; };
-		CD050F568213B31AA624F5C0E98B0302 /* AKModifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKModifier.h; path = AlfredKit/Classes/AKModifier.h; sourceTree = "<group>"; };
+		BAC97269298773F0DBFA66DCEAFACBD6 /* AKScriptFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AKScriptFilter.m; path = AlfredKit/Classes/AKScriptFilter.m; sourceTree = "<group>"; };
 		D52A855C01C5E6E307112D55FF0FBABF /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D6E6D5C162D6AD0A72B432A769659126 /* AlfredKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = AlfredKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		DB4FFFA7A8AE784255ECA0710504E15F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		E009EFF4FF3F031F6EB1A60CE4BEE97A /* AKIcon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKIcon.h; path = AlfredKit/Classes/AKIcon.h; sourceTree = "<group>"; };
+		DA56E79D487E7A89F4EB45B3755C356F /* AKIcon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AKIcon.m; path = AlfredKit/Classes/AKIcon.m; sourceTree = "<group>"; };
+		E28F7D2E21E8A7EB6B497928B170E819 /* AKSubtitle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AKSubtitle.m; path = AlfredKit/Classes/AKSubtitle.m; sourceTree = "<group>"; };
 		E76AD042DDB99E09F38B021AD37DEA5B /* Pods-Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-resources.sh"; sourceTree = "<group>"; };
-		F8BDF6C9A27AE179B1DE4FB5D2500841 /* libAlfredKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAlfredKit.a; path = libAlfredKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD00F4D9C35046DB2229E03BDC0AB1D2 /* AlfredKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AlfredKit.h; path = AlfredKit/Classes/AlfredKit.h; sourceTree = "<group>"; };
+		F3B5918C5A70F0B8D7AFB3A0AE5E4BFF /* AKScriptFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKScriptFilter.h; path = AlfredKit/Classes/AKScriptFilter.h; sourceTree = "<group>"; };
+		F5AD77CA3DD8F987BE092357C22FB2C1 /* AKSubtitle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKSubtitle.h; path = AlfredKit/Classes/AKSubtitle.h; sourceTree = "<group>"; };
+		F8B0B207AB2DE902902C15E5766677FB /* AlfredKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlfredKit-dummy.m"; sourceTree = "<group>"; };
+		F8BDF6C9A27AE179B1DE4FB5D2500841 /* libAlfredKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAlfredKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		889CA2A3A6E3DC742E5A661EA8B13B22 /* Frameworks */ = {
+		925A893FE2EFA1B862529BC0496F3B9B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		925A893FE2EFA1B862529BC0496F3B9B /* Frameworks */ = {
+		D5AB51B6C317B9C22FC3FBEBDD0FEE38 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -99,14 +99,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		395E037DC5D0D84B675C99426034E3B6 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				88A77F3E41F117458FA77F582D680A6B /* AlfredKit */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		45BF6390E4DB7E143C827E9EE4118525 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,40 +107,38 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		88A77F3E41F117458FA77F582D680A6B /* AlfredKit */ = {
+		4DD758445438C9C5503268463E0184A4 /* AlfredKit */ = {
 			isa = PBXGroup;
 			children = (
-				0454D1667DD14A54AD47E6AA659B1C86 /* AKContent.h */,
-				E009EFF4FF3F031F6EB1A60CE4BEE97A /* AKIcon.h */,
-				BC4EB4480D9B9388AB2152339CAC3F7D /* AKIcon.m */,
-				B89AEFF7A7FBE6B6BAABC566AFF75172 /* AKItem.h */,
-				878E71154601C6A6603501460B2F7978 /* AKItem.m */,
-				C826B09F153A36B4F8180E88DF9D2FE4 /* AKList.h */,
-				7ADC711DE68CF2C8EE6848E637879445 /* AKList.m */,
-				CD050F568213B31AA624F5C0E98B0302 /* AKModifier.h */,
-				BBF5E517F1B4E064509CB12C8B97A7DE /* AKModifier.m */,
-				A8C4B453273C6C897834FCEAE849A534 /* AKSubtitle.h */,
-				7FF20443DBF1400D9DD5A9D79C5FB1F5 /* AKSubtitle.m */,
-				4CD779C71F3C7309143BEE06A3EC15B1 /* AKText.h */,
-				7E0C702DC42A6DB27FE476BDAAAFBD07 /* AKText.m */,
-				0A0230D1AA79DBD354C925B1B0A39B00 /* AKUtils.h */,
-				608DFFFAD91F9AC381C92A1BF9A8CE58 /* AKUtils.m */,
-				FD00F4D9C35046DB2229E03BDC0AB1D2 /* AlfredKit.h */,
-				9F5EE9B88F49B86B1666F82BA1EA5CDE /* Pod */,
-				DD93EC9B7446DC4D747355EA6B0020CD /* Support Files */,
+				2F016CA229233E394B12CDA860DF2E66 /* AKContent.h */,
+				136478E608E6BAFC5C05F336DEAD2EC6 /* AKIcon.h */,
+				DA56E79D487E7A89F4EB45B3755C356F /* AKIcon.m */,
+				71E664B12747B2AE0B5CCDF8E01A1BC5 /* AKItem.h */,
+				6DAC0D113A76AB92B56BE2ED19CF8ADD /* AKItem.m */,
+				B920CF0733B418F9AE93573833579366 /* AKModifier.h */,
+				0B8C81C601FCD2BC2BD195D06D410D16 /* AKModifier.m */,
+				F3B5918C5A70F0B8D7AFB3A0AE5E4BFF /* AKScriptFilter.h */,
+				BAC97269298773F0DBFA66DCEAFACBD6 /* AKScriptFilter.m */,
+				F5AD77CA3DD8F987BE092357C22FB2C1 /* AKSubtitle.h */,
+				E28F7D2E21E8A7EB6B497928B170E819 /* AKSubtitle.m */,
+				579BC045624EE41D6326AA2E57D0C721 /* AKText.h */,
+				7103F231CE87FD4F32F49DDD778BCB7E /* AKText.m */,
+				AFA879E52637898F3D7EACF838DE6C8F /* AKUtils.h */,
+				515CD4030965DA2A5A2A6821B94DBF52 /* AKUtils.m */,
+				0D485B3F3C4FE6ED230CDC705E238ACB /* AlfredKit.h */,
+				E3819BE7343F0D080513021CBB485BAD /* Pod */,
+				D534B774EED871F8C2A0744BF1F0AD31 /* Support Files */,
 			);
 			name = AlfredKit;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		9F5EE9B88F49B86B1666F82BA1EA5CDE /* Pod */ = {
+		8A602ED0709B045CA8D247298F549CAD /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D6E6D5C162D6AD0A72B432A769659126 /* AlfredKit.podspec */,
-				04714AFEF75266F7FDAE71113A8FB020 /* LICENSE */,
-				DB4FFFA7A8AE784255ECA0710504E15F /* README.md */,
+				4DD758445438C9C5503268463E0184A4 /* AlfredKit */,
 			);
-			name = Pod;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		C28AA90FF350B4A4C9E3E379A6E071A7 /* Pods-Example */ = {
@@ -170,11 +160,22 @@
 			isa = PBXGroup;
 			children = (
 				24390EFD555DD124430DFF9724065945 /* Podfile */,
-				395E037DC5D0D84B675C99426034E3B6 /* Development Pods */,
+				8A602ED0709B045CA8D247298F549CAD /* Development Pods */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
 				1A1D883017EC01CD4340381397FC6DF4 /* Products */,
 				45BF6390E4DB7E143C827E9EE4118525 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D534B774EED871F8C2A0744BF1F0AD31 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8ECDF2F172BCB767B9C1B226D60808B9 /* AlfredKit.xcconfig */,
+				F8B0B207AB2DE902902C15E5766677FB /* AlfredKit-dummy.m */,
+				13EF6B6ECDC6D2B5E4CB773293BD7774 /* AlfredKit-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/AlfredKit";
 			sourceTree = "<group>";
 		};
 		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
@@ -184,15 +185,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DD93EC9B7446DC4D747355EA6B0020CD /* Support Files */ = {
+		E3819BE7343F0D080513021CBB485BAD /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				3B54EFA255DEC31F09223C9AB3E8D299 /* AlfredKit.xcconfig */,
-				C891D92C7152B76EC26E1A06F6E1DF41 /* AlfredKit-dummy.m */,
-				31F8B7C8389C68732EA8219029F84F7D /* AlfredKit-prefix.pch */,
+				1A5B0063A20CE4CFB1C99AC2660A2CB0 /* AlfredKit.podspec */,
+				628A9A070B6CBD19583137EA49AFAD63 /* LICENSE */,
+				648DF762ABAC6C51F886F5773B5F0EFC /* README.md */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/AlfredKit";
+			name = Pod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,19 +205,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CFDEA479415253AE9D99FC697DC1E064 /* Headers */ = {
+		D0B7917000328B21753C2388C7CBE8B7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE62753EBAFAEFD1E19CC67E13547FAB /* AKContent.h in Headers */,
-				638C31A200CFF4A54322F4AB569604E4 /* AKIcon.h in Headers */,
-				BD66D578D52F99D6C88638CE15BB874B /* AKItem.h in Headers */,
-				E9F5E8558BD7B3DCAC1C426C5A125FD5 /* AKList.h in Headers */,
-				5EAA0CADDB7BDED20111E91F9D8FF47F /* AKModifier.h in Headers */,
-				96EAE76A66CD17EDE7CB5E0940A319EA /* AKSubtitle.h in Headers */,
-				311D4B940E200356F066880DC26966A6 /* AKText.h in Headers */,
-				0DE0DC38E0A0F8DA18692AE754C49756 /* AKUtils.h in Headers */,
-				7BB620EEEFA4E5B561180DB451817F9C /* AlfredKit.h in Headers */,
+				F976F34CF1F011D26C8E7C8A73301438 /* AKContent.h in Headers */,
+				BFD3A46201AF47F28B7CA4DFEA3E29FC /* AKIcon.h in Headers */,
+				2082048AFF7F00BA4B4056CD7B97174C /* AKItem.h in Headers */,
+				B677AF106FFBC75184092FA75EB46D58 /* AKModifier.h in Headers */,
+				395B0217BF1F4877E412443CA8C86A0E /* AKScriptFilter.h in Headers */,
+				0D40778E889E2E282C9C084AEF54F3E1 /* AKSubtitle.h in Headers */,
+				2FF4963FD15172BC47E9E8FB44ADA827 /* AKText.h in Headers */,
+				CE2E8D8146C7FF9FED9578A00B69D49F /* AKUtils.h in Headers */,
+				485822BD8F8A6AAD86D4C8711ACF3FFD /* AlfredKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,13 +242,13 @@
 			productReference = A1126BF0A0F6D599E6B2428EAC165D9F /* libPods-Example.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		2A2BE52B9FF4754297395AC400ECE1EA /* AlfredKit */ = {
+		9EF30B092D12C9C6E435F70DC438FE24 /* AlfredKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F274527F7485A3BB2DF5A0CD4DD6E2D1 /* Build configuration list for PBXNativeTarget "AlfredKit" */;
+			buildConfigurationList = 0F122DBA1EC7E569F851473CE61BDE48 /* Build configuration list for PBXNativeTarget "AlfredKit" */;
 			buildPhases = (
-				CFDEA479415253AE9D99FC697DC1E064 /* Headers */,
-				E937B6DF5C244DC518A7FD4B521A007A /* Sources */,
-				889CA2A3A6E3DC742E5A661EA8B13B22 /* Frameworks */,
+				D0B7917000328B21753C2388C7CBE8B7 /* Headers */,
+				EA583BBC1187519B88D48F1165B425C8 /* Sources */,
+				D5AB51B6C317B9C22FC3FBEBDD0FEE38 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -280,7 +280,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2A2BE52B9FF4754297395AC400ECE1EA /* AlfredKit */,
+				9EF30B092D12C9C6E435F70DC438FE24 /* AlfredKit */,
 				235D907666D3AD0690682888F3985CA2 /* Pods-Example */,
 			);
 		};
@@ -295,18 +295,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E937B6DF5C244DC518A7FD4B521A007A /* Sources */ = {
+		EA583BBC1187519B88D48F1165B425C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7563CCB5C4D1A3BF9A9AF61DF83A0117 /* AKIcon.m in Sources */,
-				7A30423D6C65635091CB22665EACA13F /* AKItem.m in Sources */,
-				54D1A80E33511532D950EDB029C997BE /* AKList.m in Sources */,
-				473D4867CFBCDE13680DC6D80FB066D7 /* AKModifier.m in Sources */,
-				49893B69A238553E6E298E5B5C49E1EE /* AKSubtitle.m in Sources */,
-				45C7E19A1FF463DB8936D50BB706D036 /* AKText.m in Sources */,
-				9A1D600BE5C5865A273320AAD7785F0A /* AKUtils.m in Sources */,
-				95803BBD7ACF260E0F7C5FEEEF136F12 /* AlfredKit-dummy.m in Sources */,
+				5DBB51A009A0FAEDA829BAAFCA2310E6 /* AKIcon.m in Sources */,
+				7E60FA93C6A867E6DEC323F750ACF8A7 /* AKItem.m in Sources */,
+				A9BA9682B82B25D7CB4C7D7DC3F28800 /* AKModifier.m in Sources */,
+				6148710BEF8AD369016AA43FEC7636BD /* AKScriptFilter.m in Sources */,
+				B92C72CDAF9C98174B94F83F8AE87262 /* AKSubtitle.m in Sources */,
+				3D154E7F7E05E52D2DD1EB85E70C3916 /* AKText.m in Sources */,
+				610783F2FA537B8B61F59F4CC32407CE /* AKUtils.m in Sources */,
+				859D086FA3D5723996135F47D448B19D /* AlfredKit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,36 +316,12 @@
 		493E5552C0C2C253D0CF2BECC93D00C5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AlfredKit;
-			target = 2A2BE52B9FF4754297395AC400ECE1EA /* AlfredKit */;
+			target = 9EF30B092D12C9C6E435F70DC438FE24 /* AlfredKit */;
 			targetProxy = 7A3F75FB6D4F0D9C1C87014FD4E14675 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		03A3EFB1BC171E0AB0069B84099D5649 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B54EFA255DEC31F09223C9AB3E8D299 /* AlfredKit.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				EXECUTABLE_PREFIX = lib;
-				GCC_PREFIX_HEADER = "Target Support Files/AlfredKit/AlfredKit-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = AlfredKit;
-				PRODUCT_NAME = AlfredKit;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-			};
-			name = Release;
-		};
 		05B50C8001F93DF9A091FC427AB3F896 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D52A855C01C5E6E307112D55FF0FBABF /* Pods-Example.debug.xcconfig */;
@@ -423,10 +399,57 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		77639E81DE57F589DA62259B41E5A9EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ECDF2F172BCB767B9C1B226D60808B9 /* AlfredKit.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/AlfredKit/AlfredKit-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = AlfredKit;
+				PRODUCT_NAME = AlfredKit;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Debug;
+		};
+		8D00C06801C69D006FE271CC17AA64B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ECDF2F172BCB767B9C1B226D60808B9 /* AlfredKit.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/AlfredKit/AlfredKit-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = AlfredKit;
+				PRODUCT_NAME = AlfredKit;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 			};
 			name = Release;
 		};
@@ -518,33 +541,18 @@
 			};
 			name = Debug;
 		};
-		D8E754685439CC6AC1335C019C17AAD2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B54EFA255DEC31F09223C9AB3E8D299 /* AlfredKit.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				EXECUTABLE_PREFIX = lib;
-				GCC_PREFIX_HEADER = "Target Support Files/AlfredKit/AlfredKit-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = AlfredKit;
-				PRODUCT_NAME = AlfredKit;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0F122DBA1EC7E569F851473CE61BDE48 /* Build configuration list for PBXNativeTarget "AlfredKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77639E81DE57F589DA62259B41E5A9EF /* Debug */,
+				8D00C06801C69D006FE271CC17AA64B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -559,15 +567,6 @@
 			buildConfigurations = (
 				05B50C8001F93DF9A091FC427AB3F896 /* Debug */,
 				9B222E7D20DB0E5B3E92F65B63BD1261 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F274527F7485A3BB2DF5A0CD4DD6E2D1 /* Build configuration list for PBXNativeTarget "AlfredKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D8E754685439CC6AC1335C019C17AAD2 /* Debug */,
-				03A3EFB1BC171E0AB0069B84099D5649 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
