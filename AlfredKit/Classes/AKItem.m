@@ -66,7 +66,7 @@ NSString *AKItemTypeGetName(AKItemType type) {
     AKSubtitle *item = [[AKSubtitle alloc] init];
     item.subtitle = subtitle;
     item.mod = mod;
-    [self.mSubtitles addObject:subtitle];
+    [self.mSubtitles addObject:item];
     return item;
 }
 
