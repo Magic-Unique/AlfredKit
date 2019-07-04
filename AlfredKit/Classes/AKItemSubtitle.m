@@ -1,14 +1,14 @@
 //
-//  AKSubtitle.m
+//  AKItemSubtitle.m
 //  AlfredKit
 //
 //  Created by Magic-Unique on 2019/2/16.
 //
 
-#import "AKSubtitle.h"
+#import "AKItemSubtitle.h"
 #import "AKUtils.h"
 
-@implementation AKSubtitle
+@implementation AKItemSubtitle
 
 /* Subtitle only for XML mode */
 - (id)JSON {

@@ -5,9 +5,9 @@
 //  Created by Magic-Unique on 2019/2/15.
 //
 
-#import "AKModifier.h"
+#import "AKItemModifier.h"
 
-@implementation AKModifier
+@implementation AKItemModifier
 
 - (instancetype)init {
     self = [super init];
@@ -18,6 +18,9 @@
 }
 
 - (id)JSON {
+    if (!self.subtitle && !self.arg) {
+        return nil;
+    }
     NSMutableDictionary *JSON = [NSMutableDictionary dictionary];
     JSON[@"subtitle"] = self.subtitle;
     JSON[@"valid"] = @(self.valid);

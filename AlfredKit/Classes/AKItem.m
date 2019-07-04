@@ -49,8 +49,8 @@ NSString *AKItemTypeGetName(AKItemType type) {
     return self;
 }
 
-- (AKModifier *)setMod:(AKModKey)key subtitle:(NSString *)subtitle arg:(NSString *)arg {
-    AKModifier *mod = [[AKModifier alloc] init];
+- (AKItemModifier *)setMod:(AKModKey)key subtitle:(NSString *)subtitle arg:(NSString *)arg {
+    AKItemModifier *mod = [[AKItemModifier alloc] init];
     mod.key = key;
     mod.subtitle = subtitle;
     mod.arg = arg;
@@ -58,19 +58,19 @@ NSString *AKItemTypeGetName(AKItemType type) {
     return mod;
 }
 
-- (NSArray<AKModifier *> *)mods {
+- (NSArray<AKItemModifier *> *)mods {
     return self.mMods.allValues;
 }
 
-- (AKSubtitle *)setSubtitle:(NSString *)subtitle mod:(AKModKey)mod {
-    AKSubtitle *item = [[AKSubtitle alloc] init];
+- (AKItemSubtitle *)setSubtitle:(NSString *)subtitle mod:(AKModKey)mod {
+    AKItemSubtitle *item = [[AKItemSubtitle alloc] init];
     item.subtitle = subtitle;
     item.mod = mod;
     [self.mSubtitles addObject:item];
     return item;
 }
 
-- (NSArray<AKSubtitle *> *)subtitles {
+- (NSArray<AKItemSubtitle *> *)subtitles {
     return [self.mSubtitles copy];
 }
 
@@ -97,7 +97,7 @@ NSString *AKItemTypeGetName(AKItemType type) {
     item[@"type"] = AKItemTypeGetName(self.type);
     if (self.mMods.count) {
         NSMutableDictionary *mods = [NSMutableDictionary dictionary];
-        for (AKModifier *mod in self.mMods.allValues) {
+        for (AKItemModifier *mod in self.mMods.allValues) {
             mods[AKModKeyGetName(mod.key)] = mod.JSON;
         }
         item[@"mods"] = mods;
@@ -127,10 +127,10 @@ NSString *AKItemTypeGetName(AKItemType type) {
     //  Item Elements
     [item ak_addChild:[NSXMLElement ak_elementWithName:@"title" stringValue:self.title]];
     [item ak_addChild:[NSXMLElement ak_elementWithName:@"subtitle" stringValue:self.subtitle]];
-    for (AKSubtitle *subtitle in self.subtitles) {
+    for (AKItemSubtitle *subtitle in self.subtitles) {
         [item ak_addChild:subtitle.XMLElement];
     }
-    for (AKModifier *mod in self.mMods.allValues) {
+    for (AKItemModifier *mod in self.mMods.allValues) {
         [item ak_addChild:mod.XMLElement];
     }
     [item ak_addChild:[NSXMLElement ak_elementWithName:@"arg" stringValue:self.arg]];
@@ -160,25 +160,25 @@ NSString *AKItemTypeGetName(AKItemType type) {
 }
 
 @synthesize icon = _icon;
-- (AKIcon *)icon {
+- (AKItemIcon *)icon {
     if (!_icon) {
-        _icon = [[AKIcon alloc] init];
+        _icon = [[AKItemIcon alloc] init];
     }
     return _icon;
 }
 
 @synthesize onCopyText = _onCopyText;
-- (AKText *)onCopyText {
+- (AKItemText *)onCopyText {
     if (!_onCopyText) {
-        _onCopyText = [AKText textWithType:AKTextTypCopy];
+        _onCopyText = [AKItemText textWithType:AKItemTextTypCopy];
     }
     return _onCopyText;
 }
 
 @synthesize onLargeText = _onLargeText;
-- (AKText *)onLargeText {
+- (AKItemText *)onLargeText {
     if (!_onLargeText) {
-        _onLargeText = [AKText textWithType:AKTextTypeLargeType];
+        _onLargeText = [AKItemText textWithType:AKItemTextTypeLargeType];
     }
     return _onLargeText;
 }

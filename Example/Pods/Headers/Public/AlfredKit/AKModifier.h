@@ -1,1 +1,0 @@
-../../../../../AlfredKit/Classes/AKModifier.h

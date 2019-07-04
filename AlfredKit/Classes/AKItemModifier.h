@@ -9,14 +9,14 @@
 #import "AKContent.h"
 #import "AKUtils.h"
 
-@interface AKModifier : NSObject <AKContent>
+@interface AKItemModifier : NSObject <AKContent>
 
 @property (nonatomic, assign) AKModKey key;
 
 @property (nonatomic, assign) BOOL valid;
 
-@property (nonatomic, copy) NSString *arg;
+@property (nonatomic, copy, nullable) NSString *arg;
 
-@property (nonatomic, copy) NSString *subtitle;
+@property (nonatomic, copy, nullable) NSString *subtitle;
 
 @end

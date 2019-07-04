@@ -6,6 +6,6 @@
 //  Copyright (c) 2019 Magic-Unique. All rights reserved.
 //
 
-#import "AKModifier.h"
+#import "AKItemModifier.h"
 #import "AKItem.h"
 #import "AKScriptFilter.h"

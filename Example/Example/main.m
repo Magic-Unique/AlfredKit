@@ -55,7 +55,7 @@ int main(int argc, const char * argv[]) {
         }];
         list.variables[@"a"] = @"b";
         list.rerun = 1;
-        [list show];
+        [list print];
     }
     return 0;
 }

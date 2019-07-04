@@ -52,17 +52,31 @@
     _rerun = rerun;
 }
 
-- (void)show {
+- (NSString *)__description:(BOOL)pretty {
     NSString *content = nil;
     if (self.useXMLMode) {
         NSXMLDocument *output = [NSXMLDocument documentWithRootElement:[self XMLElement]];
-        content = [output XMLString];
+        content = [output XMLStringWithOptions:(pretty?NSXMLNodePrettyPrint:kNilOptions)];
     } else {
         NSData *data = [NSJSONSerialization dataWithJSONObject:[self JSON]
-                                                       options:kNilOptions
+                                                       options:(pretty?NSJSONWritingPrettyPrinted:kNilOptions)
                                                          error:nil];
         content = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     }
+    return content;
+}
+
+- (void)show {
+    [self print];
+}
+
+- (void)print {
+    NSString *content = [self __description:NO];
+    printf("%s\n", content.UTF8String);
+}
+
+- (void)prettyPrint {
+    NSString *content = [self __description:YES];
     printf("%s\n", content.UTF8String);
 }
 

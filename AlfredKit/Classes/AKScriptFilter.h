@@ -8,7 +8,10 @@
 #import <Foundation/Foundation.h>
 #import "AKItem.h"
 
-NS_ASSUME_NONNULL_BEGIN
+typedef NS_ENUM(NSUInteger, AKScriptFilterStyle) {
+    AKScriptFilterStyleJSON,
+    AKScriptFilterStyleXML,
+};
 
 @interface AKScriptFilter : NSObject <AKContent>
 
@@ -25,27 +28,29 @@ NS_ASSUME_NONNULL_BEGIN
  XML mode is deprecated by Alfred. but the XML format will remain available for legacy use.
  @return AKScriptFilter in XML Mode.
  */
-+ (instancetype)XMLScriptFilter;
++ (instancetype _Nonnull)XMLScriptFilter;
 
 /**
  Create a list with JSON mode.
 
  @return AKScriptFilter in JSON Mode.
  */
-+ (instancetype)JSONScriptFilter;
++ (instancetype _Nonnull)JSONScriptFilter;
 
-
-@property (nonatomic, copy, readonly) NSMutableArray<AKItem *> *items;
-- (void)addItem:(AKItem *)item;
-- (void)addItemWithCreator:(AKItemCreator)creator;
-- (void)addItems:(NSArray *)items;
+/**
+ Items
+ */
+@property (nonatomic, copy, readonly, nonnull) NSMutableArray<AKItem *> *items;
+- (void)addItem:(AKItem * _Nonnull)item;
+- (void)addItemWithCreator:(AKItemCreator _Nonnull)creator;
+- (void)addItems:(NSArray * _Nonnull)items;
 
 /**
  Variables in result list.
  
  Variables can be passed out of the script filter within a variables object. This is useful for two things. Firstly, these variables will be passed out of the script filter's outputs when actioning a result. Secondly, any variables passed out of a script will be passed back in as environment variables when the script is run within the same session. This can be used for very simply managing state between runs as the user types input or when the script is set to re-run after an interval.
  */
-@property (nonatomic, strong, readonly) NSMutableDictionary *variables;
+@property (nonatomic, strong, readonly, nonnull) NSMutableDictionary *variables;
 
 
 /**
@@ -58,8 +63,16 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Format to string and output to Alfred console.
  */
-- (void)show;
+- (void)show __deprecated_msg("-[AKScriptFilter show] is deprecated, use `print` or `prettyPrint` instead.");
+
+/**
+ Format to string and output to Alfred console.
+ */
+- (void)print;
+
+/**
+ Format to string with pretty style and output to Alfred console.
+ */
+- (void)prettyPrint;
 
 @end
-
-NS_ASSUME_NONNULL_END

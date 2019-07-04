@@ -1,17 +1,17 @@
 //
-//  AKText.m
+//  AKItemText.m
 //  AlfredKit
 //
 //  Created by Magic-Unique on 2019/2/15.
 //
 
-#import "AKText.h"
+#import "AKItemText.h"
 #import "AKUtils.h"
 
-@implementation AKText
+@implementation AKItemText
 
-+ (instancetype)textWithType:(AKTextType)type {
-    AKText *item = [[AKText alloc] init];
++ (instancetype)textWithType:(AKItemTextType)type {
+    AKItemText *item = [[AKItemText alloc] init];
     item->_type = type;
     return item;
 }
@@ -21,7 +21,7 @@
 }
 
 - (NSXMLElement *)XMLElement {
-    NSString *type = [AKText typeName:self.type];
+    NSString *type = [AKItemText typeName:self.type];
     if (!self.text || !type) {
         return nil;
     }
@@ -30,11 +30,11 @@
     return text;
 }
 
-+ (NSString *)typeName:(AKTextType)type {
++ (NSString *)typeName:(AKItemTextType)type {
     switch (type) {
-        case AKTextTypCopy:
+        case AKItemTextTypCopy:
             return @"copy";
-        case AKTextTypeLargeType:
+        case AKItemTextTypeLargeType:
             return @"largetype";
         default:
             break;

@@ -1,5 +1,5 @@
 //
-//  AKSubtitle.h
+//  AKItemSubtitle.h
 //  AlfredKit
 //
 //  Created by Magic-Unique on 2019/2/16.
@@ -11,11 +11,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AKSubtitle : NSObject <AKContent>
+@interface AKItemSubtitle : NSObject <AKContent>
 
 @property (nonatomic, assign) AKModKey mod;
 
-@property (nonatomic, copy) NSString *subtitle;
+@property (nonatomic, copy, nullable) NSString *subtitle;
 
 @end
 

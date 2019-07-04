@@ -10,9 +10,9 @@
 
 @protocol AKContent <NSObject>
 
-- (id)JSON;
+- (id _Nullable)JSON;
 
-- (NSXMLElement *)XMLElement;
+- (NSXMLElement * _Nullable)XMLElement;
 
 @end
 
