@@ -5,14 +5,14 @@ import PackageDescription
 
 let package = Package(
     name: "AlfredKit",
+    platforms: [
+        .macOS("10.10")
+    ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "AlfredKit",
             targets: ["AlfredKit"]),
-        .executable(
-            name: "Demo",
-            targets: ["Demo"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.

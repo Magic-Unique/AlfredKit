@@ -8,28 +8,17 @@
 import Foundation
 import AlfredKit
 
-var scriptFilter = ScriptFilter(xml: true)
+var scriptFilter = ScriptFilter(format: .json)
 scriptFilter.rerun = 1
-scriptFilter.append { (row) in
-    row.title = "Title"
-    row.subtitle = "Subtitle"
-    row.icon = .type("png")
-    row.text.largetype = "largetype"
-    row.text.copy = "copy"
-    row.quicklookurl = "https://www.baidu.com"
-}
-scriptFilter.append { (row) in
-    row.title = "Title"
-    row.subtitle = "Subtitle"
-    row.icon = .type("png")
-    row.onPress(.alt, subtitle: "Press `Alt`")
-}
-scriptFilter.append { (row) in
-    row.title = "Title"
-    row.subtitle = "Subtitle"
-    row.icon = .type("png")
-    row.valid = false
+scriptFilter.append {
+    $0.title = "Title"
+    $0.subtitle = "Subtitle"
+    $0.icon = .type("png")
+    $0.valid = false
+    $0.on(press: .option, subtitle: "Press `option`")
+    $0.quicklookurl = "https://www.baidu.com"
+    $0.text.largetype = "text.largetype"
 }
 scriptFilter.variables["aa"] = "bb"
-
-scriptFilter.show()
+scriptFilter.show(format: .json)
+scriptFilter.show(format: .xml)

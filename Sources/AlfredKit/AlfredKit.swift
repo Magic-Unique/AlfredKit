@@ -21,17 +21,21 @@ protocol ScriptFilterElement {
 /// ScriptFilter instance
 public struct ScriptFilter {
     
+    public enum Format {
+        case xml, json
+    }
+    
     /**
-     Use XML Mode,
+     Output format, JSON (default) or XML (deprecated by Alfred)
      
      XML mode is deprecated by Alfred. but the XML format will remain available for legacy use.
      */
-    public var xml = false
+    public var format: Format = .json
     
     /// Create ScriptFilter
     /// - Parameter xml: Use XML Mode, default is false
-    public init(xml: Bool = false) {
-        self.xml = xml
+    public init(format: Format = .json) {
+        self.format = format
     }
     
     /**
@@ -163,7 +167,7 @@ public struct ScriptFilter {
         public var text = Text()
         
         public enum ModifierKey: String {
-            case alt, shift, cmd, ctrl, fn
+            case shift, cmd, ctrl, option = "alt"
         }
         public struct Mod {
             public var key: ModifierKey
@@ -184,7 +188,7 @@ public struct ScriptFilter {
         ///   - subtitle: subtitle for react
         ///   - arg: Arg for action, default is nil
         ///   - valid: valid state, default is true
-        public mutating func onPress(_ key: ModifierKey, subtitle: String, arg: String? = nil, valid: Bool = true) {
+        public mutating func on(press key: ModifierKey, subtitle: String, arg: String? = nil, valid: Bool = true) {
             if mods == nil { mods = [:] }
             mods![key] = Mod(key: key, valid: valid, subtitle: subtitle, arg: arg)
         }
@@ -264,8 +268,8 @@ public extension ScriptFilter {
     /// Convert content to string
     /// - Parameter pretty: Pretty format
     /// - Returns: String
-    func toString(_ pretty: Bool) -> String {
-        if xml {
+    func toString(format: Format, pretty: Bool) -> String {
+        if format == .xml {
             let document = XMLDocument(rootElement: xmlElement)
             let string = document.xmlString(options: pretty ? .nodePrettyPrint : [])
             return string
@@ -278,8 +282,9 @@ public extension ScriptFilter {
     
     /// Print content to standant output
     /// - Parameter pretty: Pretty format
-    func show(_ pretty: Bool = true) {
-        let string = toString(pretty)
+    func show(format: Format? = nil, pretty: Bool = true) {
+        let _format = format ?? self.format
+        let string = toString(format: _format, pretty: pretty)
         print(string)
     }
     
