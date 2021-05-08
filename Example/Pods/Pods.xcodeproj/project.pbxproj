@@ -41,11 +41,11 @@
 		0E5383F23B8A2E3C3F678DE22FBF64F3 /* AKItemIcon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKItemIcon.h; path = AlfredKit/Classes/AKItemIcon.h; sourceTree = "<group>"; };
 		197609C7A5C5F0E09C2BB37E1F601589 /* AlfredKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlfredKit-dummy.m"; sourceTree = "<group>"; };
 		1AF8146CC7A12B1734D5955CC3283779 /* AKItemText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AKItemText.m; path = AlfredKit/Classes/AKItemText.m; sourceTree = "<group>"; };
-		1F667CC0E19EAF34E5A4119E2121F585 /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Example.a"; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F667CC0E19EAF34E5A4119E2121F585 /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F8EE1CBEACB8CF7DDBE8EFE4651427 /* AKItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AKItem.m; path = AlfredKit/Classes/AKItem.m; sourceTree = "<group>"; };
 		258C5B15CFD96EDCE7D1A4076DAA00E2 /* AlfredKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlfredKit-prefix.pch"; sourceTree = "<group>"; };
 		2E0605B54A05B825D850D90525CB5F93 /* AKUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AKUtils.m; path = AlfredKit/Classes/AKUtils.m; sourceTree = "<group>"; };
-		3808D2CB40364FD0E7CCA90FEB395E65 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3808D2CB40364FD0E7CCA90FEB395E65 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		388F27696CCC49E6B598A977C8AFE26F /* AlfredKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlfredKit.xcconfig; sourceTree = "<group>"; };
 		3CF2DF91C82E85287A10C4AA669D6BB9 /* AKScriptFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AKScriptFilter.m; path = AlfredKit/Classes/AKScriptFilter.m; sourceTree = "<group>"; };
 		3EAF03E3B1DB5815E2D93FE7024BE002 /* AKItemModifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AKItemModifier.m; path = AlfredKit/Classes/AKItemModifier.m; sourceTree = "<group>"; };
@@ -54,19 +54,19 @@
 		4DFCFE16BBF05A0DD405A1B156BB7AC4 /* AKContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKContent.h; path = AlfredKit/Classes/AKContent.h; sourceTree = "<group>"; };
 		778C9A677DE76C7C9CC2EC8390B30DE5 /* AKItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKItem.h; path = AlfredKit/Classes/AKItem.h; sourceTree = "<group>"; };
 		7C64F5C49E628593D9C013FE22C1603E /* AlfredKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AlfredKit.h; path = AlfredKit/Classes/AlfredKit.h; sourceTree = "<group>"; };
-		7F10764C6FBA3E38B96EB2CCDF162656 /* libAlfredKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAlfredKit.a; path = libAlfredKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F10764C6FBA3E38B96EB2CCDF162656 /* libAlfredKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAlfredKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		873CDB2CE2AB3D55E7F7846B54D0067E /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		995512BD8A1204FF064C89218D3D9059 /* Pods-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		9A06B2CBC7F57E9BE08460BE730B397B /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
-		9A5C7E40BEB87A8AD26B318980F4AAC5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A5C7E40BEB87A8AD26B318980F4AAC5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B008315E68227AFC5E12A6AAB2595666 /* AKScriptFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKScriptFilter.h; path = AlfredKit/Classes/AKScriptFilter.h; sourceTree = "<group>"; };
 		B91DF57C92F97A48CA91703AF353F3B6 /* AKItemIcon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AKItemIcon.m; path = AlfredKit/Classes/AKItemIcon.m; sourceTree = "<group>"; };
 		CEB5CE60F2648C5816E0D295E71A57FF /* Pods-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D46069078A679B0FF38E9730CF17AF58 /* AKUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKUtils.h; path = AlfredKit/Classes/AKUtils.h; sourceTree = "<group>"; };
 		D5BFEF1DDF3D2D328528F7A565F5177D /* Pods-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Example-dummy.m"; sourceTree = "<group>"; };
 		E9CBFCAE5FD86FAF231C9B31804149B7 /* AKItemModifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKItemModifier.h; path = AlfredKit/Classes/AKItemModifier.h; sourceTree = "<group>"; };
-		F720961FA8F6C40D32585B3DE704E76F /* AlfredKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AlfredKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F720961FA8F6C40D32585B3DE704E76F /* AlfredKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = AlfredKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FB4E9440A1D2E93F87AD3F1091066E08 /* AKItemSubtitle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AKItemSubtitle.m; path = AlfredKit/Classes/AKItemSubtitle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -371,8 +371,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

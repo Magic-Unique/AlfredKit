@@ -9,7 +9,9 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-```objc
+### For Objective-C
+
+```objectivec
 AKScriptFilter *scriptFilter = [[AKScriptFilter alloc] init];
 scriptFilter.useXMLMode = NO;
 /*
@@ -18,65 +20,106 @@ scriptFilter.useXMLMode = NO;
  * If `useXMLMode` is NO, it will use JSON mode. 
  */
 
-//	Add an item to list
+//    Add an item to list
 [scriptFilter addItemWithCreator:^(AKItem *item) {
-	// title
-	item.title = @"title";
-	item.subtitle = @"subtitle";
-	
-	//	auto complete with TAB key
-	item.autocomplete = @"aktool";
-	
-	//	arg for next step
-	item.arg = @"arg";
-	
-	//	icon, [FileType|FileIcon|Image]
-	[item.icon setFileTypeWithPathExtension:@"app"];
-	
-	//	subtitle (only for XML mode)
-	//	When user hold on the mod key, Alfred will display the first arg as subtitle
-	[item setSubtitle:@"subtitle AKModKeyCommand" mod:AKModKeyCommand];
-	[item setSubtitle:@"subtitle AKModKeyOption" mod:AKModKeyOption];
-	[item setSubtitle:@"subtitle AKModKeyControl" mod:AKModKeyControl];
-	[item setSubtitle:@"subtitle AKModKeyShift" mod:AKModKeyShift];
-	[item setSubtitle:@"subtitle AKModKeyFn" mod:AKModKeyFn];
-	
-	//	Mod key (recommand, for XML and JSON)
-	//	When user hold on the mod key, Alfred will display the subtitle.
-	//	If user hold on the mod key and press RETURN, the arg will pass to next step.
-	[item setMod:AKModKeyCommand subtitle:@"mod AKModKeyCommand" arg:@"AKModKeyCommand"];
-	[item setMod:AKModKeyOption subtitle:@"mod AKModKeyOption" arg:@"AKModKeyOption"];
-	[item setMod:AKModKeyControl subtitle:@"mod AKModKeyControl" arg:nil];
-	[item setMod:AKModKeyShift subtitle:@"mod AKModKeyShift" arg:@"AKModKeyShift"];
-	[item setMod:AKModKeyFn subtitle:@"mod AKModKeyFn" arg:@"AKModKeyFn"];
-	
-	//	When user press cmd+C, the text will be copied.
-	[item setCopyText:@"onCopyText"];
-	
-	//	When user press cmd+L, the text will display on LargeType window.
-	[item setLargeText:@"onLargeText"];
-	
-	//	When user press cmd+Y or Shift, the url or path will open in QuickLook window.
-	item.quicklookurl = @"https://www.alfredapp.com";
+    // title
+    item.title = @"title";
+    item.subtitle = @"subtitle";
+
+    //    auto complete with TAB key
+    item.autocomplete = @"aktool";
+
+    //    arg for next step
+    item.arg = @"arg";
+
+    //    icon, [FileType|FileIcon|Image]
+    [item.icon setFileTypeWithPathExtension:@"app"];
+
+    //    subtitle (only for XML mode)
+    //    When user hold on the mod key, Alfred will display the first arg as subtitle
+    [item setSubtitle:@"subtitle AKModKeyCommand" mod:AKModKeyCommand];
+    [item setSubtitle:@"subtitle AKModKeyOption" mod:AKModKeyOption];
+    [item setSubtitle:@"subtitle AKModKeyControl" mod:AKModKeyControl];
+    [item setSubtitle:@"subtitle AKModKeyShift" mod:AKModKeyShift];
+    [item setSubtitle:@"subtitle AKModKeyFn" mod:AKModKeyFn];
+
+    //    Mod key (recommand, for XML and JSON)
+    //    When user hold on the mod key, Alfred will display the subtitle.
+    //    If user hold on the mod key and press RETURN, the arg will pass to next step.
+    [item setMod:AKModKeyCommand subtitle:@"mod AKModKeyCommand" arg:@"AKModKeyCommand"];
+    [item setMod:AKModKeyOption subtitle:@"mod AKModKeyOption" arg:@"AKModKeyOption"];
+    [item setMod:AKModKeyControl subtitle:@"mod AKModKeyControl" arg:nil];
+    [item setMod:AKModKeyShift subtitle:@"mod AKModKeyShift" arg:@"AKModKeyShift"];
+    [item setMod:AKModKeyFn subtitle:@"mod AKModKeyFn" arg:@"AKModKeyFn"];
+
+    //    When user press cmd+C, the text will be copied.
+    [item setCopyText:@"onCopyText"];
+
+    //    When user press cmd+L, the text will display on LargeType window.
+    [item setLargeText:@"onLargeText"];
+
+    //    When user press cmd+Y or Shift, the url or path will open in QuickLook window.
+    item.quicklookurl = @"https://www.alfredapp.com";
 }];
 
 //  Add variables to list, on next step, you can use {var:name} query to get them.
 scriptFilter.varables[@"name"] = @"value";
 
-//	Set rerun time interval.
+//    Set rerun time interval.
 scriptFilter.rerun = 1;
 
-//	Format string and output to Alfred console.
+//    Format string and output to Alfred console.
 [scriptFilter show];
 ```
+
+### For Swift
+
+```swift
+import AlfredKit
+
+var scriptFilter = ScriptFilter(format: .json)
+scriptFilter.append {
+    $0.title = "Title"
+    $0.subtitle = "Subtitle"
+    $0.icon = .type("png")
+    $0.valid = false
+    $0.arg = "Arguments"
+    $0.on(press: .option, subtitle: "Press `option`")
+    $0.quicklookurl = "https://www.baidu.com"
+    $0.text.largetype = "text.largetype"
+    $0.text.copy = "text.copy"
+    $0.autocomplete = @"aktool";
+}
+scriptFilter.variables["aa"] = "bb"
+scriptFilter.rerun = 1
+scriptFilter.show(format: .json)
+```
+
+
 
 ## Installation
 
 AlfredKit is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
+### For Objective-C
+
 ```ruby
 pod 'AlfredKit'
+# or
+pod 'AlfredKit/ObjC'
+```
+
+### For Swift
+
+```ruby
+pod 'AlfredKit/Swift'
+```
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/Magic-Unique/AlfredKit.git", from: "2.0.0")
+],
 ```
 
 ## Author

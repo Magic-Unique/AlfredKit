@@ -16,6 +16,7 @@ scriptFilter.append {
     $0.icon = .type("png")
     $0.valid = false
     $0.on(press: .option, subtitle: "Press `option`")
+    $0.autocomplete = "123"
     $0.quicklookurl = "https://www.baidu.com"
     $0.text.largetype = "text.largetype"
 }

@@ -25,8 +25,9 @@ let package = Package(
             name: "AlfredKit",
             dependencies: []),
         .target(
-            name: "Demo",
-            dependencies: ["AlfredKit"]),
+            name: "AlfredKitExample",
+            dependencies: ["AlfredKit"],
+            path: "Sources/Example"),
         .testTarget(
             name: "AlfredKitTests",
             dependencies: ["AlfredKit"]),
